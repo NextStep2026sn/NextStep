@@ -1,0 +1,43 @@
+:root{
+  /* reuse variables from landing.css */
+}
+body { background: #f7f8fb; font-family: var(--font-body); }
+.app-header{ background: linear-gradient(90deg,#1e4fd8 0%, #3b73ff 100%); padding: 12px 0; color: #fff; position: sticky; top:0; z-index:40; }
+.header-inner{ width: min(1120px, calc(100% - 2rem)); margin:0 auto; display:flex; align-items:center; justify-content:space-between; }
+.brand{ display:flex; align-items:center; gap:12px; }
+.brand-mark{ width:48px; height:48px; border-radius:50%; background: rgba(255,255,255,0.15); display:grid; place-items:center; font-weight:800; color:#fff; font-size:1.25rem; box-shadow: var(--shadow-soft); }
+.brand-name{ font-weight:700; font-size:1.1rem; }
+.brand-sub{ font-size:0.85rem; opacity:0.9 }
+.header-actions{ display:flex; align-items:center; gap:14px }
+.score{ background: rgba(255,255,255,0.12); padding:8px 12px; border-radius:999px; font-weight:700 }
+.home-container{ width: min(1120px, calc(100% - 2rem)); margin: 1.25rem auto; display:grid; gap:1.25rem }
+.card{ background:#fff; border-radius:14px; padding:18px; box-shadow: var(--shadow-soft); }
+.welcome-card h3{ margin:0 0.25rem; font-size:1.5rem }
+.muted{ color:var(--color-text-soft); }
+.progress-row{ display:flex; justify-content:space-between; align-items:center; margin-top:12px }
+.progress-bar{ background: #eef5ff; border-radius:999px; height:12px; overflow:hidden; margin-top:8px }
+.progress-fill{ height:100%; background:linear-gradient(90deg,#3eb370,#1e4fd8); }
+.next-step{ margin-top:12px }
+.timeline h4{ margin:0 0 10px 0 }
+.steps{ list-style:none; padding:0; margin:0 }
+.step{ padding:12px 0; border-bottom:1px solid rgba(16,26,52,0.04); display:flex; align-items:center; gap:12px }
+.step .dot{ width:36px; height:36px; border-radius:50%; background:#f1f5ff; display:grid; place-items:center }
+.step.done .dot{ background:linear-gradient(90deg,#1e4fd8,#3b73ff); color:#fff }
+.step.current .dot{ background:#fff; border:2px solid #1e4fd8 }
+.cards-list{ display:grid; gap:10px }
+.list-card{ display:flex; gap:12px; align-items:center; padding:12px; border-radius:12px; background:#fff; box-shadow: var(--shadow-soft); text-decoration:none; color:inherit }
+.icon{ width:56px; height:56px; border-radius:12px; display:grid; place-items:center; color:#fff; font-size:1.2rem }
+.icon.blue{ background: linear-gradient(90deg,#5b8def,#1e4fd8) }
+.icon.orange{ background: linear-gradient(90deg,#ff9b6b,#ff7a59) }
+.icon.green{ background: linear-gradient(90deg,#3eb370,#2ab7b6) }
+.card-title{ font-weight:700 }
+.purple-cta{ background: linear-gradient(90deg,#7a4dff,#c040ff); color:#fff }
+.purple-cta .btn-primary{ background: #fff; color:#6a2cff }
+.universities h4{ margin:0 0 12px 0 }
+.uni-list{ display:grid; gap:8px }
+.uni-item{ background:#fff; padding:14px; border-radius:12px; box-shadow: var(--shadow-soft) }
+.bottom-nav{ position:fixed; left:50%; transform:translateX(-50%); bottom:12px; width:min(920px, calc(100% - 2rem)); display:flex; justify-content:space-around; background:#fff; border-radius:999px; padding:10px; box-shadow:0 8px 30px rgba(16,26,52,0.08) }
+.nav-item{ color:var(--color-text-soft); text-decoration:none }
+.nav-item.active{ color:var(--color-blue); font-weight:700 }
+
+@media (min-width: 960px){ .cards-list{ grid-template-columns: 1fr 1fr; } }
