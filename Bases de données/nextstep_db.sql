@@ -42,7 +42,7 @@ CREATE TABLE `favori` (
 CREATE TABLE `filiere` (
   `id_filiere` int(11) NOT NULL,
   `nom` varchar(100) NOT NULL,
-  `description` text DEFAULT NULL,
+  `description_filiere` text DEFAULT NULL,
   `domaine` varchar(100) DEFAULT NULL,
   `duree` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -69,7 +69,7 @@ CREATE TABLE `historique` (
 CREATE TABLE `metier` (
   `id_metier` int(11) NOT NULL,
   `nom` varchar(100) NOT NULL,
-  `description` text DEFAULT NULL,
+  `description_metier` text DEFAULT NULL,
   `secteur` varchar(100) DEFAULT NULL,
   `niveau_etude` varchar(100) DEFAULT NULL,
   `salaire_min` decimal(10,2) DEFAULT NULL,
@@ -148,6 +148,7 @@ CREATE TABLE `test_riasec` (
   `profil_dominant` char(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+
 -- --------------------------------------------------------
 
 --
@@ -157,7 +158,7 @@ CREATE TABLE `test_riasec` (
 CREATE TABLE `universite` (
   `id_universite` int(11) NOT NULL,
   `nom` varchar(150) NOT NULL,
-  `description` text DEFAULT NULL,
+  `description_universite` text DEFAULT NULL,
   `type` enum('publique','privee') NOT NULL,
   `pays` varchar(100) DEFAULT NULL,
   `ville` varchar(100) DEFAULT NULL,
