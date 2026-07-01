@@ -18,3 +18,5 @@ nextstep_db
 1. Créer une base nommée nextstep_db.
 2. Importer schema.sql.
 3. Importer seed.sql.
+
+
