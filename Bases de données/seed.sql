@@ -2,7 +2,7 @@
 -- FILIÈRES
 -- =========================
 
-INSERT INTO filiere (nom, description_filiere, domaine, duree) VALUES
+INSERT INTO filiere (nom, description, domaine, duree) VALUES
 ('Informatique', 'Étude des systèmes informatiques, développement et réseaux', 'Sciences & Technologies', '3 ans'),
 ('Génie Civil', 'Construction et infrastructures', 'Ingénierie', '3 ans'),
 ('Médecine', 'Études médicales et santé humaine', 'Santé', '6 à 8 ans'),
@@ -16,7 +16,7 @@ INSERT INTO filiere (nom, description_filiere, domaine, duree) VALUES
 -- METIERS
 -- =========================
 
-INSERT INTO metier (nom, description_metier, secteur, niveau_etude, salaire_min, salaire_max) VALUES
+INSERT INTO metier (nom, description, secteur, niveau_etude, salaire_min, salaire_max) VALUES
 ('Développeur Web', 'Création de sites et applications web', 'Informatique', 'Licence / Master', 300000, 1500000),
 ('Data Scientist', 'Analyse de données et intelligence artificielle', 'Informatique', 'Master', 500000, 2000000),
 ('Ingénieur Génie Civil', 'Construction de bâtiments et infrastructures', 'BTP', 'Master', 400000, 1800000),
@@ -30,7 +30,7 @@ INSERT INTO metier (nom, description_metier, secteur, niveau_etude, salaire_min,
 -- UNIVERSITÉS
 -- =========================
 
-INSERT INTO universite (nom, description_universite , type, pays, ville, site_web) VALUES
+INSERT INTO universite (nom, description , type, pays, ville, site_web) VALUES
 ('UCAD', 'Université Cheikh Anta Diop de Dakar, la plus grande université du Sénégal', 'publique', 'Sénégal', 'Dakar', 'https://www.ucad.sn'),
 ('UGB', 'Université Gaston Berger de Saint-Louis', 'publique', 'Sénégal', 'Saint-Louis', 'https://www.ugb.sn'),
 ('UIDT', 'Université Iba Der Thiam de Thiès', 'publique', 'Sénégal', 'Thiès', 'https://www.univ-thies.sn'),
